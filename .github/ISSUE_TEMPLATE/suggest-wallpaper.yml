@@ -1,0 +1,47 @@
+name: 提交壁纸/Suggest a Wallpaper
+description: 你可以通过这个议题模版提交你喜欢的壁纸/Suggest a wallpaper for Snap Hutao client
+title: "[Wallpaper]: 这里填写当天日期/Change the wallpaper to today's date"
+labels: ["wallpaper-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > **请完整填写下面的表格**
+        > **Please fill the form below**
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 检查清单/Checklist
+      description: |-
+        请确保你已完整执行检查清单，否则你的议题可能会被忽略
+      options:
+        - label: 这个图片是全年龄向的/This image is NOT NSFW
+          required: true
+
+        - label: 这个图片主题是与原神相关的/This image is related to Genshin Impact
+          required: true
+
+        - label: 这个图片的来源是可查询的且不是 AI 生成的/The source of the image is clear and it's not AI generated
+          required: true
+
+  - type: input
+    id: image-preview
+    attributes:
+      label: 图片预览/Image Preview
+      description: |
+        将图片复制进该输入框以上传预览图
+        Copy the image here to upload the preview image
+    validations:
+      required: true
+
+  - type: textarea
+    id: image-source
+    attributes:
+      label: 图片来源/Image Source
+      description: |
+        请提供该图片的来源，应为原作者的上传链接（比如 Pixiv 链接），不能是第三方转发平台。
+        Please provide the source of image, should be author's URL (such as Pixiv URL), not a repost URL.
+    validations:
+      required: true
+
