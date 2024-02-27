@@ -26,7 +26,7 @@ body:
         - label: 这个图片的来源是可查询的且不是 AI 生成的/The source of the image is clear and it's not AI generated
           required: true
 
-  - type: input
+  - type: textarea
     id: image-preview
     attributes:
       label: 图片预览/Image Preview
@@ -36,7 +36,7 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: image-source
     attributes:
       label: 图片来源/Image Source
