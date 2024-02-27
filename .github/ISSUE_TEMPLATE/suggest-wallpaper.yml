@@ -6,8 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        > **请完整填写下面的表格**
-        > **Please fill the form below**
+        > **请完整填写下面的表格/Please fill the form below**
+        > **你提交的壁纸应该是一个桌面端分辨率和比例的（16:9, 4:3 或接近的）**
+        > **Your suggested image should be a desktop resolution and ratio (close to 16:9 or 4:3)**
 
   - type: checkboxes
     id: checklist
